@@ -7,7 +7,7 @@ import PropertyHeaderImage from "@/components/PropertyHeaderImage";
 import PropertyDetails from "@/components/PropertyDetails";
 import Link from "next/link";
 import { FaArrowLeft } from "react-icons/fa";
-import Spinner from "@/components/Spenner";
+import Spinner from "@/components/Spinner";
 import { SP } from "next/dist/shared/lib/utils";
 
 const PropertyPage = () => {
