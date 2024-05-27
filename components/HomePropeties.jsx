@@ -1,8 +1,11 @@
 import React from "react";
-import properties from "@/properties.json";
 import PropertyCard from "@/components/PropertyCard";
 import Link from "next/link";
-function HomePropeties() {
+import { fetchProperties } from "@/utils/request";
+
+const HomePropeties = async () => {
+  const properties = await fetchProperties();
+
   const recentProperties = properties
     .sort(() => Math.random() - Math.random())
     .slice(0, 3);
@@ -36,6 +39,6 @@ function HomePropeties() {
       </section>
     </>
   );
-}
+};
 
 export default HomePropeties;
