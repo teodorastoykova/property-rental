@@ -2,6 +2,10 @@ import { Inter } from "next/font/google";
 import "@/assets/styles/globals.css";
 import Navbar from "@/components/NavBar";
 import AuthProvider from "@/components/AuthProvider";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import Footer from "@/components/Footer";
+
 
 export const metadata = {
   title: "Propety Pulse",
@@ -16,6 +20,8 @@ export default function MainLayout({ children }) {
         <body>
           <Navbar />
           <main>{children}</main>
+          <Footer />
+          <ToastContainer />
         </body>
       </html>
     </AuthProvider>
