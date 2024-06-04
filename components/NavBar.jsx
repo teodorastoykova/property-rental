@@ -20,7 +20,9 @@ const Navbar = () => {
   useEffect(() => {
     const setAuthProviders = async () => {
       const res = await getProviders();
-      console.log(res)
+      if (!res) {
+        throw new Error('No providers returned');
+      }
       setProviders(res);
     };
     setAuthProviders();
