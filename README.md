@@ -26,7 +26,15 @@ This project is a property rental website built using Next.js 14, designed to al
 
 ## Screenshots
 
-![App Screnshots](https://github.com/teodorastoykova/property-rental/issues/1#issue-2336063422)
+![Home Page](https://private-user-images.githubusercontent.com/72571542/336884299-ab53795b-2e23-493c-8486-1092b1959426.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTc1OTg1NDAsIm5iZiI6MTcxNzU5ODI0MCwicGF0aCI6Ii83MjU3MTU0Mi8zMzY4ODQyOTktYWI1Mzc5NWItMmUyMy00OTNjLTg0ODYtMTA5MmIxOTU5NDI2LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA2MDUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNjA1VDE0MzcyMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWMzZmMyMTAyZThkODg5YzIwZmYyOGU1OGUzMDMwNDNkZWFjYmVkOWVhYjk5MDk5MzdlOTAzOGRkMGU3YzI4ZGImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.99Nj64NIqfO_GBDlpcmOLl-gJEHpIVO-StC6yeSkRwM)
+
+![details-property-page](https://github.com/teodorastoykova/property-rental/assets/72571542/e0406625-0f50-49f7-97e4-e9b4e472a92f)
+
+![Add Property](https://github.com/teodorastoykova/property-rental/assets/72571542/ae59a774-c0e2-41cb-b89f-c95a7f8586f5)
+
+![profile-page](https://github.com/teodorastoykova/property-rental/assets/72571542/254a2b70-b078-4ae0-9bb2-84f3a1cede04)
+
+![your-messages-page](https://github.com/teodorastoykova/property-rental/assets/72571542/44a03bb6-700e-4e7d-b4c9-17a64088dedb)
 
 
 ## Tech Stack
