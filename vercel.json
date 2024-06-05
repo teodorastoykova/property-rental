@@ -1,20 +1,21 @@
 {
-    "rewrites": [
-      {
-        "source": "/api/(.*)",
-        "destination": "https://property-rental-gules.vercel.app/api/$1"
-      }
-    ],
-    "headers": [
-      {
-        "source": "/api/(.*)",
-        "headers": [
-          {
-            "key": "Access-Control-Allow-Origin",
-            "value": "https://property-rental-np5aur4o0-teodora-stoykovas-projects.vercel.app"
-          }
-        ]
-      }
-    ]
-  }
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://property-rental-six.vercel.app/api/$1"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "https://property-rental-six.vercel.app"
+        }
+      ]
+    }
+  ]
+}
+
   
