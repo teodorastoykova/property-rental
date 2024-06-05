@@ -9,9 +9,9 @@ export const GET = async (request) => {
   try {
     await connectDB();
 
-    const page = request.nextUrl.searchParams.get("page") || 1;
+    const page = 1;
 
-    const pageSize = request.nextUrl.searchParams.get("pageSize") || 6;
+    const pageSize = 6;
 
     const skip = (page - 1) * pageSize;
 
