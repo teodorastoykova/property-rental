@@ -3,6 +3,7 @@ import Property from "@/models/Property";
 import { getSessionUser } from "@/utils/getSessionUser";
 import cloudinary from "@/config/cloudinary";
 
+export const dynamic = "force-dynamic"
 //get api/properties
 export const GET = async (request) => {
   try {
@@ -24,10 +25,6 @@ export const GET = async (request) => {
     };
     return new Response(JSON.stringify(result), {
       status: 200,
-      headers: {
-        "Cache-Control": "no-store",
-        "Content-Type": "application/json",
-      },
     });
   } catch (error) {
     console.log(error);
