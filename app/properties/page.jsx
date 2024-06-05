@@ -3,7 +3,17 @@ import Properties from '@/components/Properties';
 import Property from '@/models/Property';
 import connectDB from '@/config/database';
 
-const PropertiesPage = ({ properties, total, page, pageSize }) => {
+const PropertiesPage = async ({ searchParams }) => {
+  await connectDB();
+
+  const pageSize = parseInt(searchParams.pageSize) || 6;
+  const page = parseInt(searchParams.page) || 1;
+
+  const skip = (page - 1) * pageSize;
+
+  const total = await Property.countDocuments({});
+  const properties = await Property.find({}).skip(skip).limit(pageSize);
+
   return (
     <>
       <section className='bg-blue-700 py-4'>
@@ -20,25 +30,5 @@ const PropertiesPage = ({ properties, total, page, pageSize }) => {
     </>
   );
 };
-
-export async function getServerSideProps(context) {
-  await connectDB();
-
-  const { pageSize = 6, page = 1 } = context.query;
-
-  const skip = (parseInt(page) - 1) * parseInt(pageSize);
-
-  const total = await Property.countDocuments({});
-  const properties = await Property.find({}).skip(skip).limit(parseInt(pageSize));
-
-  return {
-    props: {
-      properties: JSON.parse(JSON.stringify(properties)),
-      total,
-      page: parseInt(page),
-      pageSize: parseInt(pageSize),
-    },
-  };
-}
 
 export default PropertiesPage;
