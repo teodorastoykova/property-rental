@@ -3,15 +3,16 @@ import Property from "@/models/Property";
 import { getSessionUser } from "@/utils/getSessionUser";
 import cloudinary from "@/config/cloudinary";
 
-export const dynamic = "force-dynamic"
+export const dynamic = "force-dynamic";
+
 //get api/properties
 export const GET = async (request) => {
   try {
     await connectDB();
 
-    const page = 1;
+    const page = request.nextUrl.searchParams.get("page") || 1;
 
-    const pageSize = 6;
+    const pageSize = request.nextUrl.searchParams.get("pageSize") || 6;
 
     const skip = (page - 1) * pageSize;
 

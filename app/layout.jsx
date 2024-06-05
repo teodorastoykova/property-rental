@@ -8,6 +8,8 @@ import Footer from "@/components/Footer";
 import { GlobalProvider } from "@/context/GlobalContext";
 import 'photoswipe/dist/photoswipe.css'
 
+export const dynamic = "force-dynamic";
+
 export const metadata = {
   title: "Propety Pulse",
   description: "Find your perfect rental property",
