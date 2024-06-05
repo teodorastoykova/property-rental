@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Propery Pulse
 
-First, run the development server:
+This project is a property rental website built using Next.js 14, designed to allow users to browse, search, and manage property listings. The website incorporates a variety of modern web development technologies and features to provide a comprehensive and user-friendly experience.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- User Authentication and Authorization: Integrates Google sign-in and Next Auth for secure user authentication and authorization.
+- RESTful API Routes: Utilizes RESTful API routes for efficient data handling.
+- Route Protection: Ensures certain routes are accessible only to authenticated users.
+- User Profile Management: Allows users to manage their profiles and view their listings.
+- Property Listing CRUD Operations: Supports Create, Read, Update, and Delete operations for property listings.
+- Property Image Upload: Facilitates uploading multiple images per listing, with Cloudinary integration for image storage and optimization.
+- Property Search: Implements a robust search functionality for property listings.
+- Internal Messaging: Features internal messaging with notifications for unread messages.
+- Photoswipe Image Gallery: Includes a lightbox image gallery for property photos.
+- Mapbox Maps: Integrates Mapbox for interactive maps and property locations.
+- Toast Notifications: Utilizes toast notifications for user feedback.
+- Property Bookmarking: Allows users to bookmark and save properties.
+- Property Sharing: Enables sharing of properties to social media.
+- Loading Spinners: Incorporates loading spinners for a better user experience.
+- Responsive Design: Uses Tailwind CSS to ensure the website is responsive across various devices.
+- Custom 404 Page: Includes a custom 404 page for handling not found errors.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Screenshots
 
-To learn more about Next.js, take a look at the following resources:
+![App Screnshots](https://github.com/teodorastoykova/property-rental/issues/1#issue-2336063422)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Tech Stack
 
-## Deploy on Vercel
+**Next.js 14:** The core framework used for building the application.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**React:** Used for building user interfaces.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+**Tailwind CSS:** For styling and responsive design.
+
+**MongoDB & Mongoose:** For database management.
+
+**Next Auth:** For authentication and authorization.
+
+**React Icons:** For incorporating icons.
+
+**Photoswipe:** For image gallery functionality.
+
+**Cloudinary:** For image storage and optimization.
+
+**Mapbox & React Map GL:** For map integration.
+
+**React Geocode:** For geocoding addresses.
+
+**React Spinners:** For displaying loading spinners.
+
+**React Toastify:** For displaying toast notifications.
+
+**React Share:** For social media sharing functionality.
+
+
+## Acknowledgements
+
+ - Special thanks to the course instructors (link to the course: https://www.udemy.com/share/10asN03@AKufLrSWL55ErSDn0el_prrIPCQBXTVeFchecI8n4N2aBvPxO77P8SrrAKi1CiZovQ==/) for providing guidance and resources to build this project.
