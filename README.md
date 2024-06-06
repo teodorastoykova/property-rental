@@ -30,7 +30,7 @@ This project is a property rental website built using Next.js 14, designed to al
 
 ## 📸 Screenshots
 
-![Home Page](https://github.com/teodorastoykova/property-rental/issues/2#issue-2336097398)
+![home-page](https://github.com/teodorastoykova/property-rental/assets/72571542/ab53795b-2e23-493c-8486-1092b1959426)
 
 ![details-property-page](https://github.com/teodorastoykova/property-rental/assets/72571542/e0406625-0f50-49f7-97e4-e9b4e472a92f)
 
