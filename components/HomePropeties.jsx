@@ -2,6 +2,7 @@ import React from "react";
 import PropertyCard from "@/components/PropertyCard";
 import Link from "next/link";
 import { fetchProperties } from "@/utils/request";
+import Button from "./ui/Button";
 
 const HomePropeties = async () => {
   const data = await fetchProperties();
@@ -30,11 +31,8 @@ const HomePropeties = async () => {
       </section>
 
       <section className="m-auto max-w-lg my-10 px-6">
-        <Link
-          href="/properties"
-          className="block bg-black text-white text-center py-4 px-6 rounded-xl hover:bg-gray-700"
-        >
-          View All Properties
+        <Link href="/properties">
+          <Button intent="tertiary" text="View All Properties" />
         </Link>
       </section>
     </>

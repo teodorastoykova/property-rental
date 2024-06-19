@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { toast } from "react-toastify";
 import { useGlobalContext } from "@/context/GlobalContext";
-
+import Button from "./ui/Button";
 const Message = ({ message }) => {
   const [isRead, setIsRead] = useState(message.read);
   const [isDeleted, setIsDeleted] = useState(false);
@@ -89,22 +89,17 @@ const Message = ({ message }) => {
         </li>
       </ul>
 
-      <button
+      <Button
+        text={isRead ? "Mark as New" : "Mark As Read"}
+        intent={isRead ? "primary" : "quaternary"}
         onClick={handleReadClick}
-        className={`mt-4 mr-3 
-        ${
-          isRead ? "bg-gray-300" : "bg-blue-500 text-white"
-        }  py-1 px-3 rounded-md`}
-      >
-        {isRead ? "Mark as New" : "Mark As Read"}
-      </button>
+      ></Button>
 
-      <button
+      <Button
+        intent="danger"
+        text="Delete"
         onClick={handleDeleteClick}
-        className="mt-4 bg-red-500 text-white py-1 px-3 rounded-md"
-      >
-        Delete
-      </button>
+      ></Button>
     </div>
   );
 };

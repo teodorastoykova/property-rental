@@ -7,6 +7,7 @@ import profileDefault from "@/assets/images/profile.png";
 import { useState, useEffect } from "react";
 import Spinner from "@/components/Spinner";
 import { toast } from "react-toastify";
+import Button from "@/components/ui/Button";
 
 const ProfilePage = () => {
   const { data: session } = useSession();
@@ -70,6 +71,10 @@ const ProfilePage = () => {
     }
   };
 
+  const handleEditClick = (propertyId) => {
+    window.location.href = `/properties/${propertyId}/edit`;
+  };
+
   return (
     <section className="bg-blue-50">
       <div className="container m-auto py-24">
@@ -122,21 +127,21 @@ const ProfilePage = () => {
                       </p>
                     </div>
                     <div className="mt-2">
-                      <Link
-                        href={`properties/${property._id}/edit`}
-                        className="bg-blue-500 text-white px-3 py-3 rounded-md mr-2 hover:bg-blue-600"
-                      >
-                        Edit
-                      </Link>
-                      <button
+                      <Button
+                        intent="primary"
+                        text="Edit"
+                        onClick={() => handleEditClick(property._id)}
+                      />
+
+                      <Button
+                        intent="danger"
                         onClick={() => {
                           handleDeleteProperty(property._id);
                         }}
-                        className="bg-red-500 text-white px-3 py-2 rounded-md hover:bg-red-600"
-                        type="button"
+                        text="Delete"
                       >
                         Delete
-                      </button>
+                      </Button>
                     </div>
                   </div>
                 ))

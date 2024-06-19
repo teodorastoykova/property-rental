@@ -8,6 +8,7 @@ import {
   FaMoneyBill,
   FaMapMarker,
 } from "react-icons/fa";
+import Button from "./ui/Button";
 
 function PropertyCard({ property }) {
   const getRateDisplay = () => {
@@ -21,7 +22,7 @@ function PropertyCard({ property }) {
       return `${rates.nightly.toLocaleString()}/night`;
     }
   };
-  
+
   return (
     <div className="rounded-xl shadow-md relative">
       <Image
@@ -84,11 +85,9 @@ function PropertyCard({ property }) {
               {property.location.city} {property.location.state}{" "}
             </span>
           </div>
-          <Link
-            href={`/properties/${property._id}`}
-            className="h-[36px] bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-center text-sm"
-          >
-            Details
+
+          <Link href={`/properties/${property._id}`}>
+            <Button text="Details"></Button>
           </Link>
         </div>
       </div>
